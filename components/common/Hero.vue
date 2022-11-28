@@ -1,13 +1,10 @@
 <template>
-  <div>Hero</div>
+  <div class="text-6xl">Hero</div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>
