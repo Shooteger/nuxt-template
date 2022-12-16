@@ -53,7 +53,6 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     // Equivalent to { path: '~/components' }
-    '~/components',
     { path: '~/components/global', extensions: ['vue'] },
     { path: '~/components/common', extensions: ['vue'] }
   ],
