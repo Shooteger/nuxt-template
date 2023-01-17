@@ -1,5 +1,5 @@
 <template>
-  <body class="overflow-hidden">
+  <section class="overflow-hidden">
     <div
       class="
         lg:px-24 lg:py-24
@@ -59,6 +59,6 @@
         <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
       </div>
     </div>
-  </body>
+  </section>
 </template>
   

@@ -38,7 +38,15 @@ export default {
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
       { rel: 'icon', sizes: '32x32', href: '/favicon/favicon-32.png' },
       { rel: 'icon', sizes: '16x16', href: '/favicon/favicon-16.png' },
+      { rel: "manifest", href: "/favicon/site.webmanifest" },
     ],
+    script: [
+      // FOR INTEGRATION GOOGLE TAG EASY IN HEADER -> NOT GDPR CONFORM
+      // {
+      //   src: "https://www.googletagmanager.com/gtag/js?id=GOOGLE-TAG-ID",
+      //   async: true,
+      // },
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -64,7 +72,17 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['nuxt-cookie-control', {
+      controlButton: true,
+      blockIframe: false,
+      acceptNecessary: false,
+      barPosition: 'bottom-left',
+    }]
   ],
+
+  cookies: {
+    //IF COSTUME TEXT IN COOKIES WANTED
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
