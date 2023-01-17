@@ -1,8 +1,9 @@
 <template>
-  <Hero />
+  <div>
+    <Hero />
+  </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
